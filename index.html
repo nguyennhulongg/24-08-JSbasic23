@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+            function replay(t) {
+                if (t.length <= 1) {
+                    return t;
+                }
+                let c = t.substring(1, t.length - 1);
+                let m = t.substring(t.length - 1) + c + t.substring(0, 1);
+                console.log(m)
+            }
+
+            replay("abc");
+            replay("a");
+            replay("abcdef");
+
+    </script>
+</body>
+</html>
